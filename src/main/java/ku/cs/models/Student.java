@@ -29,9 +29,13 @@ public class Student {
         }
     }
 
-    public String grade()
-    {
-        return "F";
+    public String grade() {
+
+        return score >= 80 ? "A" :
+                    score >= 70 ? "B" :
+                            score >= 60 ? "C" :
+                                    score >= 50 ? "D" : "F";
+
     }
 
     public boolean isId(String id) {
